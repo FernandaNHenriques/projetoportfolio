@@ -87,7 +87,7 @@ body {
     justify-content: center;
     gap: 16px;
     background-color: #000000;
-    width: 50%;
+    width: 80%;
     text-align: center;
     border-radius: 16px;
     border: 2px solid #22D4FD;
@@ -122,7 +122,7 @@ body {
         padding: 18px 30px;
     }
  .apresentacao__links__link{
-    width: auto;
+    width: 100%;
  } 
 }
 
