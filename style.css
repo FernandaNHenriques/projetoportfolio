@@ -109,3 +109,14 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
 }
+
+@media screen and (min-width: 430px) {
+    .apresentacao__conteudo{
+        width: auto;
+
+    }
+    .apresentacao{
+        flex-direction: column;
+        padding: 18px 30px;
+    }
+}
