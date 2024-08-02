@@ -54,24 +54,17 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.125rem;
 }
-@media screen and (max-width: 768px) {
-    
+@media (max-width: 1000px) {
 .curriculo {
+    flex-direction: column-reverse;
+}
+    
+.curriculo_sobremim {
     width: auto;
-    flex-direction: column;
-}
-
-.curriculo_sobremim_titulo {
-    flex-direction: column;
-    padding: 18px 30px;
-}
-
-.curriculo_sobremim_texto{
-    flex-direction: column;
-    padding: 18px 30px;
+    padding: 5%;
 }
 
 .cabecalho_menu_link{
-    width: 100%;
+    width: auto;
  } 
 }

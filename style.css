@@ -118,7 +118,7 @@ body {
     }
 
     .apresentacao {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 18px 30px;
     }
  .apresentacao__links__link{
