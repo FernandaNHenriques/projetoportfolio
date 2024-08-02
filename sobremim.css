@@ -55,15 +55,23 @@
     font-size: 1.125rem;
 }
 @media screen and (max-width: 768px) {
-    .curriculo {
-        width: auto;
-    }
+    
+.curriculo {
+    width: auto;
+    flex-direction: column;
+}
 
-    .curriculo_sobremim {
-        flex-direction: column;
-        padding: 18px 30px;
-    }
- .cabecalho_menu_link{
+.curriculo_sobremim_titulo {
+    flex-direction: column;
+    padding: 18px 30px;
+}
+
+.curriculo_sobremim_texto{
+    flex-direction: column;
+    padding: 18px 30px;
+}
+
+.cabecalho_menu_link{
     width: 100%;
  } 
 }
