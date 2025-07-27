@@ -21,16 +21,35 @@
     margin: 0;
     padding: 30px 100px;
     display: flex;
-    align-items:center;
-    justify-content:space-around;
+    justify-content: space-between;
     gap: 60px;
 }
 
 .curriculo_sobremim{
-    width: 615px;
+    width: 100%;
+    gap: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculo_sobremim ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 10px;
+}
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.formacao span {
+    font-size: 14px;
+    font-weight: 300;
 }
 
 .curriculo_sobremim_titulo{
@@ -44,6 +63,9 @@
     font-family: 'Krona One', sans-serif;
     line-height: 30px;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .rodape{
