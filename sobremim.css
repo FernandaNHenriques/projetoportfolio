@@ -21,7 +21,7 @@
     margin: 0;
     padding: 30px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 60px;
 }
 
@@ -29,13 +29,32 @@
     width: 100%;
     gap: 32px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.curriculo_sobremim_texto a {
+    font-size: 14px;      
+    color: #22D4FD;          
+    text-decoration: underline; 
+    word-break: break-word;  
+}
+
+.container_informacoes{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; 
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .curriculo_sobremim ul {
     list-style: none;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -52,8 +71,20 @@
     font-weight: 300;
 }
 
+.projetos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.projetos span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
 .curriculo_sobremim_titulo{
     font-size: 2.25rem;
+    font-weight: bold;
     font-family: 'Krona One', sans-serif;
     gap: 60px;
 }
@@ -62,10 +93,15 @@
     font-size: 1.5rem;
     font-family: 'Krona One', sans-serif;
     line-height: 30px;
-    padding: 5px;
-    display: flex;
+    padding: 30px;
+    display:flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    background-color: #1e1e1e; 
+    border-radius: 10px;
+    width: 500px;
+    box-sizing: border-box;
+
 }
 
 .rodape{
@@ -78,7 +114,13 @@
 }
 @media (max-width: 1000px) {
 .curriculo {
-    flex-direction: column-reverse;
+    flex-direction: column;
+}
+
+.container_informacoes {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
     
 .curriculo_sobremim {
