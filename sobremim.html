@@ -1,71 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
+    <title>Sobre Mim</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho_menu">
             <a href="index.html" class="cabecalho_menu_link">Home</a>
             <a href="sobremim.html" class="cabecalho_menu_link">Sobre mim</a>
+            <a href="pra.html" class="cabecalho_menu_link">Módulos</a>
+            <a href="projetos.html" class="cabecalho_menu_link">Projetos</a>
+            <a href="agradecimentos.html" class="cabecalho_menu_link">Agradecimentos</a>
         </nav>
     </header>
-    <main class="curriculo">
-        <section class="curriculo_sobremim">
-            <div class="container_informacoes">
-                <div class="curriculo_sobremim_texto formacao"><p>Minha formação:👩‍🎓 </p>
-                    <ul>
-                        <li>NST PROG21 - Programador de Informática <br> <span> em 11-2024 em andamento- IEFP</span> </li>
-                        <li>Curso de Java Básico - CURSOONLINE <br> <span> 40 horas -2025</span></li>
-                        <li>Curso de Python - Usando Funções para Projeto <br><span> 8 horas - 2025</span></li>
-                        <li>VAA PROG25 - Preparatório de Programador de Informático <br> <span>100 HORAS - 2024 IEFP</span></li>
-                        <li>Curso Online de Python - CURSOONLINE <br> <span>50 HORAS - 2024</span></li>
-                        <li>Curso de Lógica de Programação <br><span> 6 HORAS - ALURA - 2024</span></li>
-                        <li>HTML E CSS. Header, Footer E Variáveis CSS <br><span> 6 HORAS - ALURA - 2024</span></li>
-                        <li>CURSO DE HTML E CSS - Trabalhando em Projeto <br><span> 20 HORAS - ALURA - 2024</span></li>
-                        <li>CURSO DE HTML E CSS. Classes, Posicionamento E Flexbox <br><span> 8 HORAS - ALURA - 2024</span></li>
-                        <li>Curso de Formação da RHMAIS para Atendimento ao Cliente via Online <br><span> 2020</span></li>
-                        <li>PONTIFÍCIA UNIVERSIDADE CATÓLICA DO RIO GRANDE DO SUL - Bacharelado em Nutrição <br><span> Formada em  07/2009</span></li>
-                    </ul>
-                </div>
-                <div class="curriculo_sobremim_texto">
-                    <p class="curriculo_sobremim_texto projetos">Meus Projetos: 👩‍💻</p>
-                    <ul>
-                        <li>Website Portfólio:
-                            <a href="https://github.com/FernandaNHenriques/projetoportfolio" target="_blank">
-                                Website Portfólio
-                            </a>                        
-                                <br> 
-                                <span> Site pessoal para apresentar projetos, competências e contatos.</span> </li>
-                        <li>AluraPlus:
-                            <a href="https://github.com/FernandaNHenriques/ALURAPLUS" target="_blank">
-                                AluraPlus
-                            </a>
-                                <br> 
-                                <span>Clone de uma plataforma de streaming com layout responsivo, desenvolvido com HTML & CSS.</span></li>
-                        <li>POS:
-                            <a href="https://github.com/FernandaNHenriques/POS" target="_blank">
-                                POS
-                            </a>
-                                <br>
-                                <span> Este é um sistema de ponto de venda (POS) desenvolvido em Java com interface gráfica Swing, ideal para pequenos comércios ou como projeto de estudo. Ele permite o cadastro e controle de pedidos, cálculo automático do total, e integração com banco de dados MySQL.</span></li>
-                        <li>AppRestaurante:
-                            <a href="https://github.com/FernandaNHenriques/apprestaurantes" target="_blank">
-                                AppRestaurante
-                            </a>
-                                <br>
-                                <span>Sabor Express Sabor Express é uma aplicação simples em Python voltada para o gerenciamento de restaurantes. Feita com foco em aprendizado e prática de conceitos de lógica, listas, dicionários e funções, ela permite cadastrar, listar e ativar/desativar restaurantes via terminal.</span></li>                   
-                    </ul>
-                </div>
+
+    <div class="container_informacoes">
+        <section class="apresentacao">
+        <h1 class="titulo-destaque">Sobre mim</h1>
+        
+        <div class="projetos-grid">
+            <div class="projeto-card">
+                <h3>Formação Tecnológica</h3>
+                <p>Programador de Informática (NST PROG21, VAA PROG25)</p>
+                <p>Cursos online em Java, Python, SQL e outros</p>
+                <p>Formação em Java, C#, Python, SQL, HTML, CSS, JavaScript</p>
             </div>
-        </section> 
-    </main>
+
+            <div class="projeto-card">
+                <h3>Ferramentas e Tecnologia</h3>
+                <p>VS Code, Visual Studio, Git e GitHub</p>
+                <p>MySQL Workbench e ferramentas online SQL</p>
+                <p>Prototipagem com Figma</p>
+                <p>Inglês intermediário - Nível B2</p>
+            </div>
+
+            <div class="projeto-card">
+                <h3>Habilidades e Competências</h3>
+                <p>Programação em C# e Java com foco em backend</p>
+                <p>Desenvolvimento web com HTML5 e CSS3</p>
+                <p>Experiência em JavaScript, SQL e Orientação a Objetos</p>
+                <p>Capacidade de aprendizado rápido e trabalho em equipe</p>
+            </div>
+        </div> 
+    </section>
+
     <footer class="rodape">
-        <p> Desenvolvido por Fernanda Henriques.</p>
+        <p>Desenvolvido por Fernanda Henriques.</p>
     </footer>
-    
 </body>
+</html>
