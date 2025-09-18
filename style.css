@@ -201,7 +201,7 @@ body {
 }
 
 .rodape {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -439,4 +439,5 @@ tr:hover td { background: #282828; }
       flex-wrap: wrap;
     }
   }
+
   
