@@ -8,17 +8,30 @@
     <link rel="icon" href="imagens/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+  
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho_menu">
-            <a href="index.html" class="cabecalho_menu_link">Home</a>
-            <a href="sobremim.html" class="cabecalho_menu_link">Sobre mim</a>
-            <a href="pra.html" class="cabecalho_menu_link">Módulos</a>
-            <a href="projetos.html" class="cabecalho_menu_link">Projetos</a>
-            <a href="agradecimentos.html" class="cabecalho_menu_link">Agradecimentos</a>
+    <header>
+        <nav class="navbar">
+          <div class="logo">Fernanda Henriques</div>
+          <button class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobremim.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="pra.html">Módulos</a></li>
+            <li><a href="agradecimentos.html">Agradecimentos</a></li>
+          </ul>
         </nav>
-    </header>
-
+      </header>
     <div class="container_informacoes">
         <section class="apresentacao">
         <h1 class="titulo-destaque">Sobre mim</h1>

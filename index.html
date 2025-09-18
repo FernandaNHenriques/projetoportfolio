@@ -11,47 +11,53 @@
     <link rel="icon" href="imagens/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
+<script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+  
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho_menu">
-            <a href="index.html" class="cabecalho_menu_link">Home</a>
-            <a href="sobremim.html" class="cabecalho_menu_link">Sobre mim</a>
-            <a href="pra.html" class="cabecalho_menu_link">Módulos</a>
-            <a href="projetos.html" class="cabecalho_menu_link">Projetos</a>
-            <a href="agradecimentos.html" class="cabecalho_menu_link">Agradecimentos</a>
+    <header>
+        <nav class="navbar">
+          <div class="logo"><i class="fa-solid fa-code"></i> Fernanda Henriques</div>
+          <button class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobremim.html">Sobre</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="pra.html">Módulos</a></li>
+            <li><a href="agradecimentos.html">Agradecimentos</a></li>
+          </ul>
         </nav>
-    </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <div class="apresentacao__conteudo__inicio">
-                <h1 class="apresentacao__conteudo__titulo"> Olá! Sou Fernanda Henriques, <br>
-                    recém formada como <br>Programadora de Informática.
-                    <br>Vamos conversar?
-                </h1><br>
-                <br><br>
-                <p class="apresentacao__conteudo__texto"> Sou apaixonada por
-                    tecnologia e desenvolvimento de soluções criativas. Atualmente, estou aprofundando meus
-                    conhecimentos em linguagens como Python, Java e C#, além de explorar áreas como
-                    desenvolvimento web e ciência de dados.</p>
-                    <br><br>
-                    <a href="CVFERNANDAHENRIQUES.pdf" class="link-curriculo" target="_blank">
-                        <i class="fa-solid fa-file-pdf"></i> Ver Currículo
-                    </a>
-            </div>
-            <img class="foto" src="imagens/fotoperfilfer.PNG" alt="Foto perfil">
-        </section>
+      </header>
+      <main class="intro">
+        <div class="intro-texto">
+          <h1>Olá, eu sou <span>Fernanda Henriques</span></h1>
+          <p>Programadora Backend apaixonada por tecnologia e soluções criativas.  
+             Atualmente, aprofundo meus conhecimentos em <strong>Python</strong>,  
+             <strong>Java</strong> e <strong>C#</strong>, além de explorar  
+             <strong>desenvolvimento web</strong> e <strong>ciência de dados</strong>.
+          </p>
+          <div class="intro-buttons">
+            <a href="docs/CVFERNANDAHENRIQUES.pdf" target="_blank" class="btn">📄 Ver Currículo</a>
+            <a href="projetos.html" class="btn btn-secundario">⚡ Ver Projetos</a>
+          </div>
         </div>
-        <div class="apresentacao__links">
-            <h2 class="apresentacao__links__subtitulo"> Acesse minhas redes:</h2>
-            <div class="apresentacao__links__linha">
-                <a class="apresentacao__links__link" href="https://github.com/fernandaNHenriques"><i class="fa-brands fa-github"></i> Github</a>
-                <a class="apresentacao__links__link" href="https://www.linkedin.com/in/fernanda-n-henriques/">
-                    <i class="fa-brands fa-linkedin"></i>Linkedin</a>
-                    <a class="apresentacao__links__link" href="mailto:fernandanhenriques@gmail.com"><i class="fa-solid fa-envelope"></i>E-mail</a>
-            </div>
+        <div class="intro-foto">
+          <img src="imagens/fotoperfilfer.PNG" alt="Foto de perfil">
         </div>
-    </main>
+      </main>
+      <div class="apresentacao__links"> <h2 class="apresentacao__links__subtitulo"> Acesse minhas redes:</h2> 
+        <div class="apresentacao__links__linha"> 
+            <a class="apresentacao__links__link" href="https://github.com/fernandaNHenriques"><i class="fa-brands fa-github"></i> Github</a> 
+            <a class="apresentacao__links__link" href="https://www.linkedin.com/in/fernanda-n-henriques/"> <i class="fa-brands fa-linkedin"></i>Linkedin</a>
+            <a class="apresentacao__links__link" href="mailto:fernandanhenriques@gmail.com"><i class="fa-solid fa-envelope"></i>E-mail</a> 
+        </div>
     <footer class="rodape">
         <p> Desenvolvido por Fernanda Henriques.</p>
     </footer>
