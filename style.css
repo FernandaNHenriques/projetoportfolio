@@ -201,7 +201,7 @@ body {
 }
 
 .rodape {
-    position: relative;
+    position:relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -316,42 +316,66 @@ tr:hover td { background: #282828; }
   
   .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    list-style: none;
   }
   
+  /* Botão escondido no desktop */
   .menu-toggle {
     display: none;
+    font-size: 1.5rem;
     background: none;
     border: none;
-    font-size: 28px;
+    color: #fff; /* ajusta à tua paleta */
     cursor: pointer;
-    color: cyan;
   }
   
   /* Mobile */
   @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      background: #111;
-      position: absolute;
-      top: 60px;
-      right: 10px;
-      padding: 15px;
-      border-radius: 8px;
-    }
-  
-    .nav-links a {
-      margin: 10px 0;
-    }
-  
-    .nav-links.active {
+    .navbar {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-  
+  }
+    
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    
     .menu-toggle {
-      display: block;
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
     }
+    
+    @media (max-width: 768px) {
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;               /* esconde */
+          flex-direction: column;      /* coloca em coluna */
+          position: absolute;
+          top: 60px;                   /* abaixo do header */
+          right: 0;
+          background: #111;            /* cor de fundo */
+          padding: 15px;
+          width: 200px;
+          border-radius: 8px;
+        }
+      
+        /* Quando ativo, aparece */
+        .nav-links.active {
+          display: flex;
+        }
+      
+        /* O botão aparece no mobile */
+        .menu-toggle {
+          display: block;
+        }
+      }
   }
 
   @media (max-width: 768px) {
@@ -439,5 +463,4 @@ tr:hover td { background: #282828; }
       flex-wrap: wrap;
     }
   }
-
   
