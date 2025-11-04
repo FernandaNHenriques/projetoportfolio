@@ -11,14 +11,6 @@
     <link rel="icon" href="imagens/pasta-de-portfolio.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
-  
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
 <body>
     <header>
         <nav class="navbar">
@@ -61,5 +53,13 @@
     <footer class="rodape">
         <p> Desenvolvido por Fernanda Henriques.</p>
     </footer>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>

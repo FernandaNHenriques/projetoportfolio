@@ -313,69 +313,61 @@ tr:hover td { background: #282828; }
     align-items: center;
     padding: 15px 20px;
   }
-  
+
   .nav-links {
     display: flex;
     gap: 20px;
     list-style: none;
   }
-  
+
+  .nav-links li a {
+    color: #22D4FD;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .nav-links li a:hover {
+    color: #00C1FF;
+  }
+
   /* Botão escondido no desktop */
   .menu-toggle {
     display: none;
     font-size: 1.5rem;
     background: none;
     border: none;
-    color: #fff; /* ajusta à tua paleta */
+    color: #22D4FD;
     cursor: pointer;
   }
-  
+
   /* Mobile */
   @media (max-width: 768px) {
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-    
     .nav-links {
-      display: flex;
-      gap: 20px;
-    }
-    
-    .menu-toggle {
       display: none;
-      font-size: 1.5rem;
-      background: none;
-      border: none;
-      cursor: pointer;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #111;
+      padding: 20px;
+      width: 200px;
+      border-radius: 8px;
+      border: 2px solid #22D4FD;
+      box-shadow: 0 0 20px rgba(34, 212, 253, 0.4);
+      z-index: 1000;
     }
-    
-    @media (max-width: 768px) {
-      @media (max-width: 768px) {
-        .nav-links {
-          display: none;               /* esconde */
-          flex-direction: column;      /* coloca em coluna */
-          position: absolute;
-          top: 60px;                   /* abaixo do header */
-          right: 0;
-          background: #111;            /* cor de fundo */
-          padding: 15px;
-          width: 200px;
-          border-radius: 8px;
-        }
-      
-        /* Quando ativo, aparece */
-        .nav-links.active {
-          display: flex;
-        }
-      
-        /* O botão aparece no mobile */
-        .menu-toggle {
-          display: block;
-        }
-      }
+
+    /* Quando ativo, aparece */
+    .nav-links.active {
+      display: flex;
+    }
+
+    /* O botão aparece no mobile */
+    .menu-toggle {
+      display: block;
+    }
   }
 
   @media (max-width: 768px) {
