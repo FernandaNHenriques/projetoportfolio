@@ -1,9 +1,32 @@
-📋 Sobre o Projeto  
-Este é um portfólio desenvolvido para exibir meus projetos, experiência e habilidades como desenvolvedora.  
-O objetivo é criar um site responsivo e bem estruturado para que recrutadores e empresas possam conhecer melhor meu trabalho.  
+# Personal Portfolio Website
 
-Tecnologias Utilizadas  
-- **HTML5**  
-- **CSS3**  
-- **JavaScript** 
-- **Frameworks** 
+This project is a personal portfolio website built to showcase my work, technical skills, professional experience, and ongoing studies in software development.  
+The portfolio is fully responsive, clean, and focused on presenting projects clearly and professionally.
+
+## 🌐 Live Version
+You can view the deployed portfolio here:  
+**https://devfernandahenriques.tech**  
+
+---
+
+## 🚀 Features
+
+- **Modern and responsive layout**
+- **Project showcase** with descriptions and links to GitHub repositories
+- **About Me** section with background, skills, and career goals
+- **Skills section** divided by technologies and areas of expertise
+- **Contact section** with links to LinkedIn, GitHub, and email
+- **Clean and simple structure** for easy updates and maintenance
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Responsive Design**
+- **Git & GitHub** for version control
+- (Add React, Tailwind, GSAP, or anything you plan to include)
+
+---
