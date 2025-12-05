@@ -1,0 +1,132 @@
+/* ===== INTRO / HERO ===== */
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 8% 40px;
+  min-height: calc(100vh - 140px); /* ocupa quase a tela inteira, descontando header+footer */
+}
+
+.intro-texto {
+  max-width: 780px;
+  text-align: center;
+}
+
+/* Título */
+.intro-texto h1 {
+  font-size: 2.7rem;
+  color: #22D4FD;
+  margin-bottom: 25px;
+}
+
+.intro-texto span {
+  color: #fff;
+}
+
+/* Parágrafo com bom espaçamento */
+.intro-texto p {
+  margin-bottom: 40px;
+  font-size: 1.15rem;
+  color: #ccc;
+  line-height: 1.9;  
+  letter-spacing: 0.02em; 
+}
+
+/* BOTÕES PRINCIPAIS */
+.intro-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: 0.25s;
+  font-size: 0.98rem;
+}
+
+/* botão principal (CV) */
+.btn-primary {
+  background: #00C1FF;
+  color: #000;
+  box-shadow: 0 0 16px rgba(0, 193, 255, 0.6);
+}
+
+.btn-primary:hover {
+  background: #0099CC;
+  color: #fff;
+}
+
+/* outros botões */
+.btn-outline {
+  background: transparent;
+  border-color: #00C1FF;
+  color: #00C1FF;
+}
+
+.btn-outline:hover {
+  background: #00C1FF;
+  color: #000;
+}
+
+/* REDES SOCIAIS */
+.intro-social {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-btn {
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid #00eaff;
+  background: #020713;
+  color: #f5f5f5;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s ease-out;
+}
+
+.social-btn i {
+  font-size: 1rem;
+}
+
+.social-btn:hover {
+  background: #00eaff;
+  color: #020713;
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+/* RESPONSIVO – HOME */
+@media (max-width: 768px) {
+  .intro {
+    padding: 40px 20px;
+    min-height: auto;
+  }
+
+  .intro-texto h1 {
+    font-size: 2.1rem;
+  }
+
+  .intro-texto p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,116 @@
+/* ===== LEARNING PAGE ===== */
+
+.learning-container {
+    padding: 70px 10% 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-destaque {
+    font-size: 2rem;
+    color: #22D4FD;
+    margin-bottom: 10px;
+}
+
+.learning-subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* navigation buttons */
+.learning-nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.btn-nav {
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: 2px solid #00C1FF;
+    color: #00C1FF;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn-nav:hover {
+    background: #00C1FF;
+    color: #000;
+    box-shadow: 0 0 12px rgba(0, 193, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+/* table wrapper */
+.table-wrapper {
+    width: 100%;
+    max-width: 950px;
+    margin-top: 20px;
+}
+
+/* table style */
+.learning-table {
+    width: 100%;
+    background: #1a1a1a;
+    border: 2px solid #00C1FF;
+    border-radius: 12px;
+    padding: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 0 22px rgba(0, 193, 255, 0.4);
+}
+
+.learning-table th,
+.learning-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    color: #ececec;
+}
+
+.learning-table th {
+    background: #0c1a2e;
+    color: #00C1FF;
+    font-weight: bold;
+}
+
+.learning-table tr:hover td {
+    background: #0f223b;
+}
+
+.learning-table a {
+    color: #00C1FF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.learning-table a:hover {
+    color: #fff;
+    text-shadow: 0 0 6px #00C1FF;
+}
+
+/* table footer */
+.learning-table tfoot td {
+    background: #0c1a2e;
+    font-weight: bold;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .learning-container {
+        padding: 40px 16px;
+    }
+
+    .learning-table th,
+    .learning-table td {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .btn-nav {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}

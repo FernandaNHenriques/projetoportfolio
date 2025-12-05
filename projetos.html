@@ -3,81 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagens/pasta-de-portfolio.png" type="image/png">
+    <title>Projects • Fernanda Henriques</title>
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="projetos.css">
+    <link rel="icon" href="imagens/icon.ico" type="image/ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
-  
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
 <body>
     <header>
         <nav class="navbar">
           <div class="logo">Fernanda Henriques</div>
-          <button class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Index</a></li>
-            <li><a href="sobremim.html">About Me</a></li>
-            <li><a href="projetos.html">Projects</a></li>
-            <li><a href="pra.html">Learning</a></li>
-          </ul>
         </nav>
-      </header>
+    </header>
+
     <div class="container_informacoes">
-        <section class="apresentacao">
-        <h1 class="titulo-destaque">Projects</h1>
-        
-        <div class="projetos-grid">
-            <div class="projeto-card">
-                <h3>Website Portfólio</h3>
-                <p>Site pessoal para apresentar projetos, competências e contatos.</p>
-                <a href="https://github.com/FernandaNHenriques/projetoportfolio" target="_blank">View Project on GitHub</a>
+        <main class="main-projects">
+            <h1 class="titulo-destaque">Projects</h1>
+
+            <!-- botões de navegação da página -->
+            <div class="proj-nav-buttons">
+                <a href="index.html" class="btn-nav">Home</a>
+                <a href="sobremim.html" class="btn-nav">About Me</a>
+                <a href="pra.html" class="btn-nav">Learning</a>
             </div>
-            <div class="projeto-card">
-                <h3>AluraPlus</h3>
-                <p>A clone of a streaming platform with a responsive layout, developed using HTML and CSS.</p>
-                <a href="https://github.com/FernandaNHenriques/ALURAPLUS" target="_blank">View Project on GitHub</a>
-            </div>
-            <div class="projeto-card">
-                <h3>POS</h3>
-                <p>This is a point-of-sale (POS) system developed in Java with a Swing graphical interface, ideal for small businesses or as a study project. It allows for order registration and control, automatic total calculation, and integration with a MySQL database.</p>
-                <a href="https://github.com/FernandaNHenriques/POS" target="_blank">View Project on GitHub</a>
-            </div>
-            <div class="projeto-card">
-                <h3>AppRestaurante</h3>
-                <p>Sabor Express is a simple Python application designed for restaurant management. Built with a focus on learning and practicing concepts of logic, lists, dictionaries, and functions, it allows users to register, list, and activate/deactivate restaurants via the terminal.</p>
-                <a href="https://github.com/FernandaNHenriques/apprestaurantes" target="_blank">View Project on GitHub</a>
-            </div>
-            <div class="projeto-card">
-              <h3>CliniPet</h3>
-              <p>CliniPet is a web application developed in ASP.NET Core with C# for complete management of veterinary clinics. The system was designed to optimize administrative and clinical work, ensuring greater efficiency in the care and monitoring of pets.</p>
-              <a href="https://github.com/FernandaNHenriques/CliniPet-Sistema-de-Gest-o-para-Cl-nicas-Veterin-rias" target="_blank">Ver Projeto no GitHub</a>
-          </div>
-          <div class="projeto-card">
-            <h3>StandCarros VisualBasic SQLServer</h3>
-            <p>Este projeto em Visual Basic .NET implementa a estrutura base de uma aplicação Windows Forms.</p>
-            <a href="https://github.com/FernandaNHenriques/StandCarros_VisualBasic_SQLServer" target="_blank">View Project on GitHub</a>
-          </div>
-          <div class="projeto-card">
-              <h3>VR Boxing Prototype - Godot</h3>
-              <p>A small VR prototype built with Godot 4. The goal is to test interactions, collision detection and basic gameplay inside a virtual environment.</p>
-              <a href="https://github.com/FernandaNHenriques/godot-vr-boxing" target="_blank">View Project on GitHub</a>
-            </div>
-            <div class="projeto-card">
-                <h3>Conta Hora</h3>
-                <p>Web application for recording work hours, breaks, and daily notes, with dashboard, detailed history, and PDF report export. Developed in Flask with a focus on productivity and organization.</p>
-                <a href="https://github.com/FernandaNHenriques/contahora" target="_blank">View Project on GitHub</a>
-            </div>
-        </div> 
+
+            <!-- grid de projetos -->
+            <section class="projetos-grid">
+                <article class="projeto-card">
+                    <h3>Website Portfólio</h3>
+                    <p>Site pessoal para apresentar projetos, competências e contatos.</p>
+                    <a href="https://github.com/FernandaNHenriques/projetoportfolio" target="_blank">
+                        View Project on GitHub
+                    </a>
+                </article>
+
+                <article class="projeto-card">
+                    <h3>AluraPlus</h3>
+                    <p>A clone of a streaming platform with a responsive layout, developed using HTML and CSS.</p>
+                    <a href="https://github.com/FernandaNHenriques/ALURAPLUS" target="_blank">
+                        View Project on GitHub
+                    </a>
+                </article>
+
+                <article class="projeto-card">
+                    <h3>POS</h3>
+                    <p>This is a point-of-sale (POS) system developed in Java with a Swing GUI, ideal for small businesses or as a study project. It handles orders, totals and MySQL integration.</p>
+                    <a href="https://github.com/FernandaNHenriques/POS" target="_blank">
+                        View Project on GitHub
+                    </a>
+                </article>
+
+                <article class="projeto-card">
+                    <h3>AppRestaurante</h3>
+                    <p>Python application for restaurant management, focused on learning logic, lists, dictionaries and functions. Allows registering, listing and activating/deactivating restaurants via terminal.</p>
+                    <a href="https://github.com/FernandaNHenriques/apprestaurantes" target="_blank">
+                        View Project on GitHub
+                    </a>
+                </article>
+
+                <article class="projeto-card">
+                    <h3>CliniPet</h3>
+                    <p>ASP.NET Core web app for complete management of veterinary clinics, optimizing administrative and clinical workflows for better pet care.</p>
+                    <a href="https://github.com/FernandaNHenriques/CliniPet-Sistema-de-Gest-o-para-Cl-nicas-Veterin-rias" target="_blank">
+                        Ver Projeto no GitHub
+                    </a>
+                </article>
+
+                <article class="projeto-card">
+                    <h3>StandCarros VisualBasic SQLServer</h3>
+                    <p>Projeto em Visual Basic .NET implementando a estrutura base de uma aplicação Windows Forms integrada ao SQL Server.</p>
+                    <a href="https://github.com/FernandaNHenriques/StandCarros_VisualBasic_SQLServer" target="_blank">
+                        View Project on GitHub
+                    </a>
+                </article>
+
+                <article class="projeto-card">
+                    <h3>VR Boxing Prototype - Godot</h3>
+                    <p>Small VR prototype built with Godot 4 to test interaction, collision detection and basic gameplay in a seated boxing experience.</p>
+                    <a href="https://github.com/FernandaNHenriques/godot-vr-boxing" target="_blank">
+                        View Project on GitHub
+                    </a>
+                </article>
+
+                <article class="projeto-card">
+                    <h3>Conta Hora</h3>
+                    <p>Flask web app for tracking work hours, breaks and daily notes, with dashboard, history and PDF reporting.</p>
+                    <a href="https://github.com/FernandaNHenriques/contahora" target="_blank">
+                        View Project on GitHub
+                    </a>
+                </article>
+            </section>
+        </main>
     </div>
+
     <footer class="rodape">
         <p>Developed by Fernanda Henriques.</p>
     </footer>

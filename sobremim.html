@@ -3,71 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagens/pasta-de-portfolio.png" type="image/png">
+    <title>About Me • Fernanda Henriques</title>
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="sobremim.css">
+    <link rel="icon" href="imagens/icon.ico" type="image/ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
-  
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
 <body>
     <header>
         <nav class="navbar">
           <div class="logo">Fernanda Henriques</div>
-          <button class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Index</a></li>
-            <li><a href="sobremim.html">About Me</a></li>
-            <li><a href="projetos.html">Projects</a></li>
-            <li><a href="pra.html">Learning</a></li>
-          </ul>
         </nav>
-      </header>
+    </header>
+
     <div class="container_informacoes">
-        <section class="apresentacao">
-        <h1 class="titulo-destaque">About Me</h1>
-        
-        <div class="projetos-grid">
-            <div class="projeto-card">
-                <h3>Educational Path</h3>
-                <p>Python - From Basics to AI applications (Data Science Academy) </p>
-                <p>Computer Programmer (NST PROG21, VAA PROG25)</p>
-                <p>Online Courses in Java, Python, SQL and others</p>
-                <p>Trainning Java, Python, SQL, HTML, CSS, GDScript</p>
+        <main class="main-about">
+            <h1 class="titulo-destaque">About Me</h1>
+
+            <!-- botões de navegação internos -->
+            <div class="about-nav-buttons">
+                <a href="index.html" class="btn-nav">Home</a>
+                <a href="projetos.html" class="btn-nav">Projects</a>
+                <a href="pra.html" class="btn-nav">Learning</a>
             </div>
 
-            <div class="projeto-card">
-                <h3>Tools and Technology</h3>
-                <p>VS Code, Visual Studio, Git e GitHub</p>
-                <p>Vercel, Render, Docker(basic)</p>
-                <p>MySQL Workbench and SQL tools online</p>
-                <p>ASP.NET - VisualBasic</p>
-                <p>Flask</p>
-            </div>
-            <div class="projeto-card">
-                <h3>Competencies</h3>
-                <p>Programmer in Python and Java</p>
-                <p>IA & Data: Python Data Science, ML(beginner)</p>
-                <p>Development web with HTML5 and CSS3</p>
-                <p>Experience in SQL </p>
-                <p>Game Dev: Godot + GDScript</p>
-            </div>
-            <div class="projeto-card">
-              <h3>Skills</h3>
-              <p>Intermediate English, B2 level</p>
-              <p>Quick learner, responsible, and good team player</p>
-              <p>Experience in Object Orientation</p>
-          </div>
-        </div> 
-    </section>
+            <section class="projetos-grid">
+                <div class="projeto-card">
+                    <h3>Educational Path</h3>
+                    <p>Python - From Basics to AI applications (Data Science Academy)</p>
+                    <p>Computer Programmer (NST PROG21, VAA PROG25)</p>
+                    <p>Online Courses in Java, Python, SQL and others</p>
+                    <p>Training Java, Python, SQL, HTML, CSS, GDScript</p>
+                </div>
+
+                <div class="projeto-card">
+                    <h3>Tools and Technology</h3>
+                    <p>VS Code, Visual Studio, Git & GitHub</p>
+                    <p>Vercel, Render, Docker (basic)</p>
+                    <p>MySQL Workbench and online SQL tools</p>
+                    <p>ASP.NET / VisualBasic</p>
+                    <p>Flask</p>
+                </div>
+
+                <div class="projeto-card">
+                    <h3>Competencies</h3>
+                    <p>Programmer in Python and Java</p>
+                    <p>AI & Data: Python Data Science, ML (beginner)</p>
+                    <p>Web development with HTML5 and CSS3</p>
+                    <p>Experience in SQL</p>
+                    <p>Game Dev: Godot + GDScript</p>
+                </div>
+
+                <div class="projeto-card">
+                    <h3>Skills</h3>
+                    <p>Intermediate English (B2 level)</p>
+                    <p>Quick learner, responsible, good team player</p>
+                    <p>Experience in Object Orientation</p>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <footer class="rodape">
         <p>Developed by Fernanda Henriques.</p>
