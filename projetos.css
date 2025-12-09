@@ -67,6 +67,21 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.projeto-card video.projeto-video {
+    width: 100%;
+    border-radius: 8px;
+    margin: 0.5rem 0 1rem 0;
+    display: block;
+}
+
+.projeto-card video.projeto-video {
+    width: 100%;
+    border-radius: 8px;
+    margin: 0.5rem 0 1rem 0;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+}
+
 .projeto-card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 10px 30px rgba(0, 193, 255, 0.6);
