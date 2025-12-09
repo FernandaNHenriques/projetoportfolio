@@ -3,10 +3,6 @@
 This project is a personal portfolio website built to showcase my work, technical skills, professional experience, and ongoing studies in software development.  
 The portfolio is fully responsive, clean, and focused on presenting projects clearly and professionally.
 
-## 🌐 Live Version
-You can view the deployed portfolio here:  
-**https://devfernandahenriques.tech**  
-
 ---
 
 ## 🚀 Features
@@ -30,3 +26,4 @@ You can view the deployed portfolio here:
 - (Add React, Tailwind, GSAP, or anything you plan to include)
 
 ---
+
