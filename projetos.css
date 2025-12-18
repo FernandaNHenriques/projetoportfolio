@@ -143,3 +143,16 @@
     margin: 0 auto 20px;
   }
 }
+
+.projeto-card {
+  overflow: hidden; /* impede qualquer coisa de vazar do card */
+}
+
+.projeto-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin: 0.5rem 0 1rem 0;
+  object-fit: cover;
+}
