@@ -7,11 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio • Fernanda Henriques</title>
     <meta name="description" content="Portfólio de Fernanda Henriques, Computer Programmer. Projects, skills, tolls and online cv.">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="projetos.css">
-    <link rel="stylesheet" href="sobremim.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="imagens/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/pasta-de-portfolio.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <script>
@@ -23,100 +20,45 @@
     });
   </script>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="imagens/icon.png" alt="K Mascot Logo" class="k-logo">
-        <span>Fernanda Henriques</span>
-      </div>
-    </nav>
-  </header>  
- <div class="container_informacoes">
-        <main class="main-projects">
-            <h1>Fernanda Henriques</h1>
-            <h2>Backend Developer & Tech Artist Junior</h2>
-            <p>Building applications, solving problems, and bringing creativity to the code.</p>
-
-            <!-- botões de navegação da página -->
-            <div class="proj-nav-buttons">
-                <a href="docs/CVFERNANDANHENRIQUES.pdf" target="_blank" class="btn btn-primary">📄 Resume</a>
-                <a href="sobremim.html" class="btn-nav">About Me</a>
-                <a href="pra.html" class="btn-nav">Learning</a>
-            </div>
-
-            <!-- grid de projetos -->
-            <section class="projetos-grid">
-              <article class="projeto-card">
-                <h3>Penguin Platformer - Smooth Run & Jump</h3>
-                <p>
-                    Small Godot 2D platformer prototype focused on smooth movement, acceleration, deceleration and jump.
-                    <br>
-                    Code: character movement, physics and jump logic (GDScript).  
-                    Art: pre-made assets (not created by me).
-                </p>
-                <video class="projeto-video" autoplay muted loop playsinline>
-                    <source src="videos/penguin-smooth-movement.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <a href="https://github.com/FernandaNHenriques/Penguin-Smooth-Movement-Godot-4---2D-" target="_blank">
-                    View Project on GitHub
-                </a>
-              </article>
-                <article class="projeto-card">
-                    <h3>VR Boxing Prototype - Godot</h3>
-                    <p>Small VR prototype built with Godot 4 to test interaction, collision detection and basic gameplay in a seated boxing experience.</p>
-                    <img src="imagens/work-in-progress.png" alt="boxeVR">
-                    <a href="https://github.com/FernandaNHenriques/godot-vr-boxing" target="_blank">
-                        View Project on GitHub
-                    </a>
-                </article>
-                <article class="projeto-card">
-                    <h3>Conta Hora</h3>
-                    <p>Flask web app for tracking work hours, breaks and daily notes, with dashboard, history and PDF reporting.</p>
-                    <video class="projeto-video" autoplay muted loop playsinline>
-                        <source src="videos/contahoraDemo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <a href="https://github.com/FernandaNHenriques/contahora" target="_blank">
-                        View Project on GitHub
-                    </a>
-                </article>
-                <article class="projeto-card">
-                    <h3>POS</h3>
-                    <p>This is a point-of-sale (POS) system developed in Java with a Swing GUI, ideal for small businesses or as a study project. It handles orders, totals and MySQL integration.</p>
-                    <a href="https://github.com/FernandaNHenriques/POS" target="_blank">
-                        View Project on GitHub
-                    </a>
-                </article>
-                <article class="projeto-card">
-                    <h3>AppRestaurante</h3>
-                    <p>Python application for restaurant management, focused on learning logic, lists, dictionaries and functions. Allows registering, listing and activating/deactivating restaurants via terminal.</p>
-                    <a href="https://github.com/FernandaNHenriques/apprestaurantes" target="_blank">
-                        View Project on GitHub
-                    </a>
-                </article>
-                <article class="projeto-card">
-                    <h3>CliniPet</h3>
-                    <p>ASP.NET Core web app for complete management of veterinary clinics, optimizing administrative and clinical workflows for better pet care.</p>
-                    <img src="imagens/clinipet.png" alt="Clinipet">
-                    <a href="https://github.com/FernandaNHenriques/CliniPet-Sistema-de-Gest-o-para-Cl-nicas-Veterin-rias" target="_blank">
-                        Ver Projeto no GitHub
-                    </a>
-                </article>
-                <article class="projeto-card">
-                    <h3>StandCarros VisualBasic SQLServer</h3>
-                    <p>This project, written in Visual Basic .NET, implements the basic structure of a Windows Forms application integrated with SQL Server.</p>
-                    <a href="https://github.com/FernandaNHenriques/StandCarros_VisualBasic_SQLServer" target="_blank">
-                        View Project on GitHub
-                    </a>
-                </article>
-            </section>
-        </main>
-    </div>
-
-<footer class="rodape">
-  <p> Developed by Fernanda Henriques.</p>
-</footer>
-
+    <header>
+        <nav class="navbar">
+          <div class="logo"><i class="fa-solid fa-code"></i> Fernanda Henriques</div>
+          <button class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Index</a></li>
+            <li><a href="sobremim.html">About Me</a></li>
+            <li><a href="projetos.html">Projects</a></li>
+            <li><a href="pra.html">Learning</a></li>
+            <li><a href="agradecimentos.html">Agradecimentos</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="intro">
+        <div class="intro-texto">
+          <h1>Hello, I'm <span>Fernanda Henriques</span></h1>
+          <p>A programmer passionate about technology and creative solutions. Currently deepening my knowlegde of<strong>Python</strong>,  
+           e <strong>and Python Frameworks</strong>, as well as exploring areas like
+             <strong>web development</strong> and <strong>data science</strong>.
+          </p>
+          <div class="intro-buttons">
+            <a href="docs/CVFERNANDAHENRIQUES.pdf" target="_blank" class="btn">📄 Resume - CV</a>
+            <a href="projetos.html" class="btn btn-secundario">⚡ See Projects</a>
+          </div>
+        </div>
+        <div class="intro-foto">
+          <img src="imagens/fotoperfilfer.PNG" alt="Foto de perfil">
+        </div>
+      </main>
+      <div class="apresentacao__links"> <h2 class="apresentacao__links__subtitulo"> My Networks:</h2> 
+        <div class="apresentacao__links__linha"> 
+            <a class="apresentacao__links__link" href="https://github.com/fernandaNHenriques"><i class="fa-brands fa-github"></i> Github</a> 
+            <a class="apresentacao__links__link" href="https://www.linkedin.com/in/fernanda-n-henriques/"> <i class="fa-brands fa-linkedin"></i>Linkedin</a>
+            <a class="apresentacao__links__link" href="mailto:fernandanhenriques@gmail.com"><i class="fa-solid fa-envelope"></i>E-mail</a> 
+        </div>
+    <footer class="rodape">
+        <p> Developed by Fernanda Henriques.</p>
+    </footer>
 </body>
 </html>
