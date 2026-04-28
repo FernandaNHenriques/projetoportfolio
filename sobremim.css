@@ -1,108 +1,110 @@
-/* ===== PÁGINA ABOUT ME ===== */
-
-.main-about {
-  padding: 80px 10% 60px;
+.main-about,
+.apresentacao {
+  padding: 70px 8% 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 36px;
 }
 
-/* título About Me */
-.main-about h1 {
+.main-about h1,
+.titulo-destaque {
   text-align: center;
   font-size: 2rem;
-  color: #22D4FD;
+  color: #60a5fa;
+  margin-bottom: 10px;
 }
 
-/* botões de navegação internos */
-.about-nav-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.btn-nav {
-  padding: 10px 18px;
-  border-radius: 999px;
-  border: 2px solid #00C1FF;
-  color: #00C1FF;
-  background: transparent;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: 0.25s;
-}
-
-.btn-nav:hover {
-  background: #00C1FF;
-  color: #000;
-  box-shadow: 0 0 12px rgba(0, 193, 255, 0.6);
-  transform: translateY(-2px);
-}
-
-/* grid dos cards (reaproveita o visual dos projetos) */
+.about-grid,
 .projetos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 28px;
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
-/* cards */
 .projeto-card {
-  background: #1a1a1a;
-  border: 2px solid #00C1FF;
-  border-radius: 12px;
-  padding: 22px;
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 28px;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0, 193, 255, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none;
+  transition: 0.2s ease;
 }
 
 .projeto-card:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 10px 30px rgba(0, 193, 255, 0.6);
+  transform: translateY(-4px);
+  border-color: #60a5fa;
 }
 
 .projeto-card h3 {
-  color: #00C1FF;
-  font-size: 1.6rem;
-  margin: 0 0 15px;
+  color: #f8fafc;
+  font-size: 1.45rem;
+  margin: 0 0 16px;
 }
 
 .projeto-card p {
-  color: #e0e0e0;
+  color: #cbd5e1;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 8px;
 }
 
-/* deixa o último card (Skills) mais centralizado em telas grandes */
+.about-grid > .projeto-card:last-child,
 .projetos-grid > .projeto-card:last-child {
-  grid-column: 1 / -1;
-  max-width: 450px;
-  margin: 0 auto;
+  grid-column: 2 / 3;
 }
 
-/* responsivo */
+.intro-social {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 5px 0 30px;
+}
+
+.social-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s ease;
+}
+
+.social-btn:hover {
+  background: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 1024px) {
+  .about-grid,
   .projetos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .about-grid > .projeto-card:last-child,
   .projetos-grid > .projeto-card:last-child {
     grid-column: auto;
-    max-width: none;
   }
 }
 
 @media (max-width: 768px) {
-  .main-about {
-    padding: 60px 16px 40px;
+  .main-about,
+  .apresentacao {
+    padding: 50px 16px 40px;
   }
 
+  .about-grid,
   .projetos-grid {
     grid-template-columns: 1fr;
   }

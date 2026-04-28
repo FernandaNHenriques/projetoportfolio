@@ -1,466 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300;400;500;600&display=swap');
-@import url('sobremim.css');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    /* height: 100%; */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.container_informacoes {
-    flex: 1;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background: #000;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    min-height: 100vh;
-    margin: 24px;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
 }
 
-/* Cabeçalho */
-.cabecalho {
-    padding: 2% 0% 0% 20%;
-}
-
-.cabecalho_menu {
-    display: flex;
-    gap: 80px;
-}
-
-.cabecalho_menu_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #22D4FD;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.cabecalho_menu_link:hover {
-    background-color: #272727;
-    padding: 6px 10px;
-    border-radius: 8px;
-}
-
-  
-  /* ===== Intro Section ===== */
-  .intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px 10%;
-    gap: 50px;
-  }
-  
-  .intro-texto {
-    flex: 1;
-  }
-  
-  .intro-texto h1 {
-    font-size: 2.5rem;
-    color: #22D4FD;
-    margin-bottom: 20px;
-  }
-  
-  .intro-texto span {
-    color: #fff;
-  }
-  
-  .intro-texto p {
-    margin-bottom: 30px;
-    font-size: 1.3rem;
-    color: #ccc;
-    line-height: 1.6;
-  }
-  
-  .intro-buttons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 25px;
-    background: #00C1FF;
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  
-  .btn:hover {
-    background: #0099CC;
-    color: #fff;
-  }
-  
-  .btn-secundario {
-    background: transparent;
-    border: 2px solid #00C1FF;
-    color: #00C1FF;
-  }
-  
-  .btn-secundario:hover {
-    background: #00C1FF;
-    color: #000;
-  }
-  
-  .intro-foto img {
-    width: 350px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(34, 212, 253, 0.4);
-  }
-
-.apresentacao {
-    padding: 50px 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    margin:10px;
-}
-
-.apresentacao__conteudo {
-    margin-bottom: 20px;
-    width: 100%;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-}
-
-.apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
-    font-family: 'Krona One', sans-serif;
-    color: #22D4FD;
-    text-indent: 30px;
-}
-
-.apresentacao__conteudo__inicio {
-    width: 80%;
-}
-
-.apresentacao__conteudo__texto {
-    font-size: 1.5rem;
-    text-indent: 30px;
-}
-
-.apresentacao__links {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-}
-
-.apresentacao__links__linha {
-    display: flex;
-    gap: 16px;
-}
-
-.apresentacao__links__subtitulo {
-    line-height: 40px;
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
-.apresentacao__links__link { 
-    display: flex; 
-    justify-content: center; 
-    gap: 16px; 
-    background: #000; 
-    width: 80%;
-    text-align: center; 
-    border-radius: 16px; 
-    border: 2px solid #22D4FD; 
-    font-size: 1.5rem; 
-    font-weight: 600; 
-    padding: 21.5px 10px; 
-    text-decoration: none; 
-    color: #F6F6F6; transition: 0.3s; }
-
-.apresentacao__links__link:hover {
-  background: #00C1FF;
-  color: #000;
-}
-
-.foto {
-    width: 500px;
-    border-radius: 50px;
-}
-
-.rodape {
-    position:relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #00C1FF;
-    text-align: center;
-    padding: 15px 0;
-    color: #000;
-    font-weight: bold;
-}
-
-/* Títulos */
-.titulo-destaque { color: #22D4FD; align-items: center;}
-h1 { font-size: 25px; align-items: center;}
-
-/* Tabelas */
-table {
-    width: 100%; 
-    max-width: 900px; 
-    margin: 0 auto; 
-    background: #1a1a1a;
-    border: 2px solid #00C1FF;
-    border-radius: 12px;
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 193, 255, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-th, td { padding: 10px 12px; border-bottom: 1px solid #eee; text-align: left; }
-th, tfoot td { background:#282828; font-weight: bold; }
-tr:hover td { background: #282828; }
-
-/* Projetos */
-.projetos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px; 
-    width: 100%; 
-    padding-bottom: 50px; 
-}
-
-.projeto-card {
-    background: #1a1a1a;
-    border: 2px solid #00C1FF;
-    border-radius: 12px;
-    padding: 18px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 193, 255, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.projeto-card:hover {
-    transform: translateY(-8px) scale(1.02); 
-    box-shadow: 0 10px 30px rgba(0, 193, 255, 0.6); 
-}
-.projeto-card h3 { color: #00C1FF; font-size: 1.8rem; margin: 0 0 15px; }
-.projeto-card p { color: #e0e0e0; font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px; }
-.projeto-card a {
-    display: inline-block; 
-    background: #00C1FF; 
-    color: #000; 
-    padding: 12px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.projeto-card a:hover { background: #0099CC; color: #fff; }
-
-
-.link-curriculo {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #00C1FF;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-    margin-left: 50px;
-    /* margin-top: 50px; */
-}
-.link-curriculo:hover { background: #0099CC; color: #fff;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
 }
 
 .logo {
-    font-family: 'Krona One', sans-serif;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #22D4FD;
-    text-shadow: 0 0 10px #22D4FD, 0 0 20px #22D4FD;
-    animation: neonPulse 2s infinite alternate;
-  }
-  
-  @keyframes neonPulse {
-    from {
-      text-shadow: 0 0 5px #22D4FD, 0 0 10px #22D4FD;
-    }
-    to {
-      text-shadow: 0 0 20px #22D4FD, 0 0 40px #22D4FD;
-    }
-  }
-
-/* Responsividade */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-  }
-  
-  /* Botão escondido no desktop */
-  .menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: #fff; /* ajusta à tua paleta */
-    cursor: pointer;
-  }
-  
-  /* Mobile */
-  @media (max-width: 768px) {
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
-    
-    .nav-links {
-      display: flex;
-      gap: 20px;
-    }
-    
-    .menu-toggle {
-      display: none;
-      font-size: 1.5rem;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-    
-    @media (max-width: 768px) {
-      @media (max-width: 768px) {
-        .nav-links {
-          display: none;               /* esconde */
-          flex-direction: column;      /* coloca em coluna */
-          position: absolute;
-          top: 60px;                   /* abaixo do header */
-          right: 0;
-          background: #111;            /* cor de fundo */
-          padding: 15px;
-          width: 200px;
-          border-radius: 8px;
-        }
-      
-        /* Quando ativo, aparece */
-        .nav-links.active {
-          display: flex;
-        }
-      
-        /* O botão aparece no mobile */
-        .menu-toggle {
-          display: block;
-        }
-      }
-  }
-
-  @media (max-width: 768px) {
-    .projetos-grid {
-      grid-template-columns: 1fr;
-    }
-    .projeto-card {
-      width: 100%;
-      margin: 0 auto 20px; 
-    }
-  }
-
-  @media (max-width: 768px) {
-    .apresentacao__conteudo {
-      flex-direction: column-reverse; 
-      align-items: center;
-      text-align: center;
-      gap: 20px;
-    }
-  
-    .apresentacao__conteudo__inicio {
-      width: 100%;
-    }
-  
-    .foto {
-      max-width: 80%;
-      height: auto;
-      margin-top: 20px;
-      border-radius: 20px;
-    }
-  }
-
-@media (max-width: 425px) {
-    .apresentacao__conteudo {
-      flex-direction: column-reverse; 
-      align-items: center;
-      text-align: center;
-      gap: 20px;
-      padding: 20px;
-    }
-  
-    .apresentacao__conteudo__titulo,
-    .apresentacao__conteudo__texto,
-    .apresentacao__links__subtitulo,
-    .apresentacao__links__link,
-    .rodape,
-    .cabecalho_menu_link {
-      font-size: 1.2rem;
-      text-indent: 0; 
-    }
-  
-    .apresentacao__conteudo__inicio {
-      width: 100%;
-    }
-  
-    .foto {
-      width: 250px;
-      max-width: 100%;
-      height: auto;
-      margin-top: 20px;
-      border-radius: 20px;
-    }
-  
-    .apresentacao__links__linha {
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
+  font-family: 'Krona One', sans-serif;
+  font-size: 1.15rem;
+  color: #e2e8f0;
+  font-weight: 700;
 }
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .intro {
-      flex-direction: column-reverse;
-      text-align: center;
-      padding: 50px 20px;
-    }
-  
-    .intro-foto img {
-      width: 250px;
-      margin-bottom: 20px;
-    }
-  
-    .intro-buttons {
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #60a5fa;
+}
+
+.rodape {
+  width: 100%;
+  background: #111827;
+  border-top: 1px solid #334155;
+  text-align: center;
+  padding: 15px 0;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
   }
-  
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}

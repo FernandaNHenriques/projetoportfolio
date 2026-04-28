@@ -1,64 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio • Fernanda Henriques</title>
-    <meta name="description" content="Portfólio de Fernanda Henriques, Computer Programmer. Projects, skills, tolls and online cv.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imagens/pasta-de-portfolio.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio • Fernanda Henriques</title>
+
+  <meta name="description" content="Portfolio of Fernanda Henriques, Backend Developer focused on Enterprise Systems, OpenText, infrastructure and troubleshooting.">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="imagens/icon.ico" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
-  
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
+
 <body>
     <header>
         <nav class="navbar">
-          <div class="logo"><i class="fa-solid fa-code"></i> Fernanda Henriques</div>
-          <button class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <ul class="nav-links" id="nav-links">
+          <div class="logo">Fernanda Henriques</div>
+      
+          <ul class="nav-links">
             <li><a href="index.html">Index</a></li>
             <li><a href="sobremim.html">About Me</a></li>
             <li><a href="projetos.html">Projects</a></li>
             <li><a href="pra.html">Learning</a></li>
-            <li><a href="agradecimentos.html">Agradecimentos</a></li>
           </ul>
         </nav>
       </header>
-      <main class="intro">
-        <div class="intro-texto">
-          <h1>Hello, I'm <span>Fernanda Henriques</span></h1>
-          <p>A programmer passionate about technology and creative solutions. Currently deepening my knowlegde of<strong>Python</strong>,  
-           e <strong>and Python Frameworks</strong>, as well as exploring areas like
-             <strong>web development</strong> and <strong>data science</strong>.
-          </p>
-          <div class="intro-buttons">
-            <a href="docs/CVFERNANDAHENRIQUES.pdf" target="_blank" class="btn">📄 Resume - CV</a>
-            <a href="projetos.html" class="btn btn-secundario">⚡ See Projects</a>
-          </div>
+
+  <main class="intro">
+    <div class="intro-texto">
+      <h1>Hello, I'm <span>Fernanda Henriques</span></h1>
+
+      <h2>Backend Developer | Enterprise Systems </h2>
+        <br><br>
+
+      <p>
+        Backend Developer with experience in enterprise environments, working with <strong>OpenText systems</strong>,
+        infrastructure configuration, and system integrations.
+        <br><br>
+        Focused on troubleshooting, system reliability, and backend development using technologies such as
+        Python, JavaScript, SQL, HTML5, IIS, Apache Tomcat, SSL certificates, and server configuration.
+      </p>
+
+      <div class="intro-buttons">
+        <a href="docs/CVFERNANDAHENRIQUES.pdf" target="_blank" class="btn">📄 Resume</a>
+      </div>
+    </div>
+
+    <div class="intro-foto">
+        <img src="imagens/fotoperfil.png" alt="Fernanda Henriques - Backend Developer">
+      </div>
+  </main>
+
+  <section class="k-footer-cta">
+    <div class="k-panels-row">
+
+      <div class="k-panel">
+        <img src="imagens/icon.png" class="k-panel-icon" alt="Projects icon">
+        <div class="k-panel-actions">
+          <a href="projetos.html" class="k-panel-btn">Projects</a>
         </div>
-        <div class="intro-foto">
-          <img src="imagens/fotoperfilfer.PNG" alt="Foto de perfil">
+      </div>
+
+      <div class="k-panel">
+        <img src="imagens/icon.png" class="k-panel-icon" alt="About icon">
+        <div class="k-panel-actions">
+          <a href="sobremim.html" class="k-panel-btn">About Me</a>
         </div>
-      </main>
-      <div class="apresentacao__links"> <h2 class="apresentacao__links__subtitulo"> My Networks:</h2> 
-        <div class="apresentacao__links__linha"> 
-            <a class="apresentacao__links__link" href="https://github.com/fernandaNHenriques"><i class="fa-brands fa-github"></i> Github</a> 
-            <a class="apresentacao__links__link" href="https://www.linkedin.com/in/fernanda-n-henriques/"> <i class="fa-brands fa-linkedin"></i>Linkedin</a>
-            <a class="apresentacao__links__link" href="mailto:fernandanhenriques@gmail.com"><i class="fa-solid fa-envelope"></i>E-mail</a> 
+      </div>
+
+      <div class="k-panel">
+        <img src="imagens/icon.png" class="k-panel-icon" alt="Learning icon">
+        <div class="k-panel-actions">
+          <a href="pra.html" class="k-panel-btn">Learning</a>
         </div>
-    <footer class="rodape">
-        <p> Developed by Fernanda Henriques.</p>
-    </footer>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="k-network-wrapper">
+    <div class="k-networks-bubble">
+      <div class="k-networks-title">My Networks</div>
+
+      <div class="k-networks-list">
+        <a href="https://github.com/fernandaNHenriques" class="social-btn" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/fernanda-n-henriques/" class="social-btn" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+
+        <a href="mailto:fernandanhenriques@gmail.com" class="social-btn">
+          <i class="fa-solid fa-envelope"></i> E-mail
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <p>Developed by Fernanda Henriques.</p>
+  </footer>
+
 </body>
 </html>

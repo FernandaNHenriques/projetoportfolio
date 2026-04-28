@@ -2,131 +2,231 @@
 
 .intro {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 60px 8% 40px;
-  min-height: calc(100vh - 140px); /* ocupa quase a tela inteira, descontando header+footer */
+  padding: 70px 8% 30px;
+  gap: 60px;
 }
 
 .intro-texto {
-  max-width: 780px;
-  text-align: center;
+  flex: 1;
+  max-width: 760px;
 }
 
-/* Título */
 .intro-texto h1 {
-  font-size: 2.7rem;
-  color: #22D4FD;
-  margin-bottom: 25px;
+  font-size: 2.8rem;
+  color: #f8fafc;
+  margin-bottom: 18px;
 }
 
-.intro-texto span {
-  color: #fff;
+.intro-texto h1 span {
+  color: #38bdf8;
 }
 
-/* Parágrafo com bom espaçamento */
+.intro-texto h2 {
+  font-size: 1.35rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
 .intro-texto p {
-  margin-bottom: 40px;
-  font-size: 1.15rem;
-  color: #ccc;
-  line-height: 1.9;  
-  letter-spacing: 0.02em; 
+  margin-bottom: 20px;
+  font-size: 1.08rem;
+  color: #cbd5e1;
+  line-height: 1.8;
 }
 
-/* BOTÕES PRINCIPAIS */
 .intro-buttons {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 40px;
+  gap: 16px;
 }
 
 .btn {
-  display: inline-flex;
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+}
+
+
+.intro-card {
+  width: 360px;
+  min-height: 320px;
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 36px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+}
+
+.intro-card h3 {
+  color: #f8fafc;
+  font-size: 1.7rem;
+  margin-bottom: 16px;
+}
+
+.intro-card p {
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* caso ainda uses imagem */
+.intro-foto img {
+  width: 340px;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== CTA PANELS ===== */
+
+.k-footer-cta {
+  display: flex;
+  justify-content: center;
+  margin: 40px 8% 25px;
+}
+
+.k-panels-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.k-panel {
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
-  border-radius: 999px;
-  font-weight: bold;
-  text-decoration: none;
-  border: 2px solid transparent;
-  transition: 0.25s;
-  font-size: 0.98rem;
+  width: 220px;
+  padding: 18px 22px;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  background: #111827;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  transition: 0.2s ease;
 }
 
-/* botão principal (CV) */
-.btn-primary {
-  background: #00C1FF;
-  color: #000;
-  box-shadow: 0 0 16px rgba(0, 193, 255, 0.6);
+.k-panel:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
 }
 
-.btn-primary:hover {
-  background: #0099CC;
-  color: #fff;
+.k-panel-icon {
+  display: none;
 }
 
-/* outros botões */
-.btn-outline {
-  background: transparent;
-  border-color: #00C1FF;
-  color: #00C1FF;
-}
-
-.btn-outline:hover {
-  background: #00C1FF;
-  color: #000;
-}
-
-/* REDES SOCIAIS */
-.intro-social {
-  margin-top: 50px;
-  margin-bottom: 20px;
+.k-panel-actions {
   display: flex;
+}
+
+.k-panel-btn {
+  text-decoration: none;
+  color: #f8fafc;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.k-panel-btn:hover {
+  color: #38bdf8;
+}
+
+/* ===== NETWORKS ===== */
+
+.k-network-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 25px 8% 40px;
+}
+
+.k-networks-bubble {
+  width: auto;
+  padding: 20px 28px;
+  border-radius: 14px;
+  border: 1px solid #334155;
+  background: #111827;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.k-networks-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.k-networks-list {
+  display: flex;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
 }
 
 .social-btn {
-  padding: 0.6rem 1.1rem;
-  border-radius: 999px;
-  border: 1px solid #00eaff;
-  background: #020713;
-  color: #f5f5f5;
+  padding: 9px 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #f8fafc;
   font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  transition: all 0.2s ease-out;
-}
-
-.social-btn i {
-  font-size: 1rem;
+  gap: 8px;
+  transition: 0.2s ease;
 }
 
 .social-btn:hover {
-  background: #00eaff;
-  color: #020713;
-  box-shadow: 0 0 14px rgba(0, 255, 255, 0.9);
-  transform: translateY(-1px);
+  background: #38bdf8;
+  color: #020617;
+  transform: translateY(-2px);
 }
 
-/* RESPONSIVO – HOME */
+/* ===== RESPONSIVE ===== */
+
 @media (max-width: 768px) {
   .intro {
-    padding: 40px 20px;
-    min-height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 45px 22px;
+    gap: 30px;
   }
 
   .intro-texto h1 {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 
-  .intro-texto p {
-    font-size: 1rem;
+  .intro-texto h2 {
+    font-size: 1.15rem;
+  }
+
+  .intro-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .intro-card,
+  .intro-foto img {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .k-panel {
+    width: 100%;
+    max-width: 300px;
   }
 }

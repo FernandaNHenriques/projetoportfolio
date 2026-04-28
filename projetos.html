@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projetos.css">
     <link rel="icon" href="imagens/pasta-de-portfolio.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -18,24 +20,19 @@
   </script>
 <body>
     <header>
-        <nav class="navbar">
-          <div class="logo">Fernanda Henriques</div>
-          <button class="menu-toggle" id="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Index</a></li>
-            <li><a href="sobremim.html">About Me</a></li>
-            <li><a href="projetos.html">Projects</a></li>
-            <li><a href="pra.html">Learning</a></li>
-            <li><a href="agradecimentos.html">Agradecimentos</a></li>
-          </ul>
-        </nav>
-      </header>
-    <div class="container_informacoes">
-        <section class="apresentacao">
+      <nav class="navbar">
+        <div class="logo">Fernanda Henriques</div>
+  
+        <ul class="nav-links">
+          <li><a href="index.html">Index</a></li>
+          <li><a href="sobremim.html">About Me</a></li>
+          <li><a href="projetos.html">Projects</a></li>
+          <li><a href="pra.html">Learning</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-projects">
         <h1 class="titulo-destaque">Projects</h1>
-        
         <div class="projetos-grid">
             <div class="projeto-card">
                 <h3>Website Portfólio</h3>
@@ -60,7 +57,7 @@
             <div class="projeto-card">
               <h3>CliniPet</h3>
               <p>CliniPet is a web application developed in ASP.NET Core with C# for complete management of veterinary clinics. The system was designed to optimize administrative and clinical work, ensuring greater efficiency in the care and monitoring of pets.</p>
-              <a href="https://github.com/FernandaNHenriques/CliniPet-Sistema-de-Gest-o-para-Cl-nicas-Veterin-rias" target="_blank">Ver Projeto no GitHub</a>
+              <a href="https://github.com/FernandaNHenriques/CliniPet-Sistema-de-Gest-o-para-Cl-nicas-Veterin-rias" target="_blank">View Project on GitHub</a>
           </div>
           <div class="projeto-card">
             <h3>StandCarros VisualBasic SQLServer</h3>
@@ -77,10 +74,11 @@
                 <p>Web application for recording work hours, breaks, and daily notes, with dashboard, detailed history, and PDF report export. Developed in Flask with a focus on productivity and organization.</p>
                 <a href="https://github.com/FernandaNHenriques/contahora" target="_blank">View Project on GitHub</a>
             </div>
-        </div> 
-    </div>
-    <footer class="rodape">
-        <p>Developed by Fernanda Henriques.</p>
-    </footer>
+        </div>
+    </main>
+
+  <footer class="rodape">
+    <p>Developed by Fernanda Henriques.</p>
+  </footer>
 </body>
 </html>

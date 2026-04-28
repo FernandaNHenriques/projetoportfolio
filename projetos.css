@@ -1,124 +1,110 @@
-/* ===== PÁGINA DE PROJECTS ===== */
-
-/* Container geral da página de projetos */
 .main-projects {
-  padding: 80px 10% 60px;
+  padding: 70px 8% 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 28px;
 }
 
-/* Título "Projects" */
 .main-projects h1 {
+  width: 100%;
   text-align: center;
   font-size: 2rem;
-  color: #22D4FD;
+  color: #60a5fa;
+  margin-bottom: 10px;
 }
 
-
-/* ===== BOTÕES DE NAVEGAÇÃO (Home / About / Learning) ===== */
-
+/* navigation buttons */
 .proj-nav-buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
   margin: 10px 0 25px;
+  flex-wrap: wrap;
 }
 
 .btn-nav {
   padding: 10px 18px;
-  border-radius: 999px;
-  border: 2px solid #00C1FF;
-  color: #00C1FF;
-  background: transparent;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  color: #f8fafc;
+  background: #1e293b;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
-  transition: 0.25s;
+  transition: 0.2s ease;
 }
 
 .btn-nav:hover {
-  background: #00C1FF;
-  color: #000;
-  box-shadow: 0 0 12px rgba(0, 193, 255, 0.6);
+  background: #2563eb;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 
-/* ===== GRID DE PROJETOS ===== */
-
+/* projects grid */
 .projetos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 28px;
   width: 100%;
   padding-bottom: 40px;
-  padding: 30px;
 }
 
-/* Card de cada projeto */
+/* project card */
 .projeto-card {
-  background: #1a1a1a;
-  border: 2px solid #00C1FF;
-  border-radius: 12px;
-  padding: 18px;
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 24px;
   text-align: center;
-  box-shadow: 0 0 20px rgba(0, 193, 255, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projeto-card video.projeto-video {
-    width: 100%;
-    border-radius: 8px;
-    margin: 0.5rem 0 1rem 0;
-    display: block;
-}
-
-.projeto-card video.projeto-video {
-    width: 100%;
-    border-radius: 8px;
-    margin: 0.5rem 0 1rem 0;
-    display: block;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+  transition: 0.2s ease;
+  overflow: hidden;
 }
 
 .projeto-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 10px 30px rgba(0, 193, 255, 0.6);
+  transform: translateY(-4px);
+  border-color: #60a5fa;
 }
 
 .projeto-card h3 {
-  color: #00C1FF;
-  font-size: 1.8rem;
+  color: #f8fafc;
+  font-size: 1.45rem;
   margin: 0 0 15px;
 }
 
 .projeto-card p {
-  color: #e0e0e0;
-  font-size: 1.05rem;
-  line-height: 1.6;
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.7;
   margin-bottom: 20px;
 }
 
-/* Botão dentro do card */
 .projeto-card a {
   display: inline-block;
-  background: #00C1FF;
-  color: #000;
+  background: #2563eb;
+  color: #ffffff;
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+  font-weight: 700;
+  transition: 0.2s ease;
 }
 
 .projeto-card a:hover {
-  background: #0099CC;
-  color: #fff;
+  background: #1d4ed8;
 }
 
-/* ===== RESPONSIVO ===== */
+.projeto-card img,
+.projeto-card video.projeto-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin: 0.5rem 0 1rem 0;
+  object-fit: cover;
+}
 
+/* responsive */
 @media (max-width: 1024px) {
   .projetos-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -130,29 +116,11 @@
     padding: 60px 16px 40px;
   }
 
-  .main-projects h2 {
+  .main-projects h1 {
     font-size: 1.7rem;
   }
 
   .projetos-grid {
     grid-template-columns: 1fr;
   }
-
-  .projeto-card {
-    width: 100%;
-    margin: 0 auto 20px;
-  }
-}
-
-.projeto-card {
-  overflow: hidden; /* impede qualquer coisa de vazar do card */
-}
-
-.projeto-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  margin: 0.5rem 0 1rem 0;
-  object-fit: cover;
 }
